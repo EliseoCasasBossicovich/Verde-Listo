@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* header */
+/* Lista categorias */
+.header__nav{
+    background-image: url(../recursos/portada.jpg);
+    background-position: top;
+    background-size: contain;
+}
+.header__nav--ul{
+    list-style: none;
+    font-size:0;
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__li {
+    padding: 0 16px 0 16px;
+    font-size: 18px;
+    border-right: solid 1px black;
+}
+.li__cat--ul{
+    position: absolute;
+    display: none;
+}
+.li__cat{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.header__li a {
+    color: black;
+    text-decoration: none;
+
+}
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 233, 233);
+    padding: 10px 10px 15px 10px;
+}
+/* Fin Lista categorias */
+.header__lista--logo{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+/* body */
+body{
+    background-color: rgb(235, 233, 233);
+}
+img{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.principal__titulo{
+    padding: 16px 16px 7px 40px;
+    border-bottom: solid 1px rgb(182, 181, 181);
+    background-color: white;
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.articles__productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Categorias */
+.categorias__grid{
+    margin-left: 370px;
+    display: grid;
+    width: 60vw;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: " sandia rabanitos naranjas"
+                         "sandia palta naranjas"
+                         "tomate ajo ajo";
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.categorias__boton{
+    
+}
+.sandia{
+    
+    grid-area: sandia;  
+    display: flex;
+    background-image: url("../recursos/sandia.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.rabanitos{
+    grid-area: rabanitos;
+    display: flex;
+    background-image: url("../recursos/rabanitos.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.naranjas{
+    grid-area: naranjas;
+    display: flex;
+    background-image: url("../recursos/naranjas.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.palta{
+    grid-area: palta;
+    display: flex;
+    background-image: url("../recursos/palta.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.tomate{
+    grid-area: tomate;
+    display: flex;
+    background-image: url("../recursos/tomater.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.ajo{
+    grid-area: ajo;
+    display: flex;
+    background-image: url("../recursos/ajo.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+/* Ofertas */
+.listado__ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: solid 1px rgb(161, 160, 160);
+    border-radius: 3%;
+    width: 300px;
+    background-color: rgba(255, 0, 0, 0.534);
+    color: white;
+
+}
+.descripcion__ofertas{
+    /* display: flex; */
+    /* background-color: rgb(255, 0, 0); */
+}   
+/* Fin Ofertas */
+/* Productos */
+.listado__productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: solid 1px rgb(161, 160, 160);
+    border-radius: 3%;
+    width: 300px;
+    background-color: rgba(60, 255, 0, 0.534);
+    color: white;
+}
+.descripcion__productos{
+    background-color: rgba(42, 165, 4, 0.658);
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Fin Productos */
+/* Visitanos */
+.main__visitanos{
+    background-color: white;
+}
+.visitanos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.visitanos__titulo{
+    padding: 16px 16px 7px 40px;
+    border-bottom: solid 1px rgb(182, 181, 181);
+    /* display: flex; */
+    font-size: 24px;
+}
+.visitanos__icono{
+    padding: 16px;
+    display: flex;
+    width: 30px;
+}
+/* Fin Visitanos */
+/* footer */
+footer{
+    background-color: rgb(64, 185, 8);
+    color: white;
+}
+/* Fin footer */
+/* media */
+
+/* Fin media */
