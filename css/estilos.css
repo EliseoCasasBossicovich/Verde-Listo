@@ -70,6 +70,7 @@ img{
     height: 100%;
 }
 .principal__titulo{
+    margin-top: 16px;
     padding: 16px 16px 7px 40px;
     border-bottom: solid 1px rgb(182, 181, 181);
     background-color: white;
@@ -159,11 +160,10 @@ img{
     border: solid 1px rgb(161, 160, 160);
     border-radius: 3%;
     width: 300px;
-    background-color: rgba(60, 255, 0, 0.534);
+    background-image: linear-gradient(to bottom, green, rgb(4, 206, 4));
     color: white;
 }
 .descripcion__productos{
-    background-color: rgba(42, 165, 4, 0.658);
     width: 100%;
     padding: 3px;
     text-align: center;
@@ -183,6 +183,9 @@ img{
     border: rgb(1, 146, 1) solid 1px;
     border-radius: 10px;
 }
+.listado__boton:hover{
+    transform: scale(1.05, 1.05);
+}
 
 /* Fin Productos */
 /* footer */
@@ -191,6 +194,8 @@ footer{
     background-color: rgb(64, 185, 8);
     color: white;
 }
+
+
 .footer__contactanos{
     display: grid;
     grid-template-areas: "indice mapa redes"
@@ -283,6 +288,10 @@ a{
 /* fin media querie de tablet */
 /* media querie de celular */
 @media (min-width: 320px) and (max-width: 575px){
+    .footer__mapa{
+    width: 100%;
+    height: 100%;
+}
     .categorias__grid{
         height: auto;
         grid-template-columns: 1fr;
