@@ -15,6 +15,7 @@ ul{
 }
 .header{
     background-color: white;
+    height: 65px;
 }
 
 .header__lista--logo{
@@ -166,9 +167,25 @@ img{
 }
 .listado__boton:hover{
     transform: scale(1.05, 1.05);
+    border: rgb(1, 146, 1) solid 1px;
+    background-color: rgb(1, 146, 1);
 }
-
 /* Fin Productos */
+/* Pedidos */
+.pedido__vacio{
+    margin: 30vh;
+    font-size: 50px;
+    text-align: center;
+}
+.pedido__pregunta{
+    font-size: 30px;
+    color: rgb(68, 67, 67);
+}
+.pedido__pregunta--dos{
+    font-size: 20px;
+    color: rgb(68, 67, 67);
+}
+/* Fin pedidos */
 /* footer */
 footer{
     padding: 27px;
@@ -210,6 +227,9 @@ a{
 /* Fin footer */
 /* media querie de trablet*/
 @media (min-width: 576px) and (max-width: 992px){
+    .header{
+        height: auto;
+    }
     .articles__productos{
         margin: auto;
     }
@@ -272,6 +292,9 @@ a{
 /* fin media querie de tablet */
 /* media querie de celular */
 @media (min-width: 320px) and (max-width: 575px){
+    .header{
+        height: auto;
+    }
     .articles__productos{
         margin: auto;
     }
