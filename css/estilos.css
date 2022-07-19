@@ -13,52 +13,35 @@ ul{
     background-position: top;
     background-size: contain;
 }
-.header__nav--ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-size:0;
+.header{
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
 }
-.header__li {
-    padding: 16px;
-    font-size: 18px;
-}
-.header__li--pedidos{
-    padding-top: 5px;
-}
-.li__cat--ul{
-    position: absolute;
-    display: none;
-}
-.li__cat{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-.header__li a {
-    color: black;
-    text-decoration: none;
-}
-ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(235, 233, 233);
-    padding: 10px 10px 15px 10px;
-}
-/* Fin Lista categorias */
+
 .header__lista--logo{
     width: 300px;
     display: flex;
     flex-direction: column;
 }
-.li__ico{
+.pedidos__div{
     display: flex;
-    flex-direction: column;
-    width: 45px;
+    justify-content: end;
+}
+.buscar{
+    width: 50vw;
+}
+.categoria__font {
+    color: black;
+}
+.boton__buscar{
+    border: rgb(1, 146, 1) solid 1px;
+    background-color: rgb(64, 185, 8);
+    color: white;
+    font-weight: 600;
+}
+.li__ico{
+    width: 43px;
     height: 45px;
+
 }
 /* body */
 body{
@@ -79,6 +62,7 @@ img{
     flex-wrap: wrap;
 }
 .articles__productos{
+    margin: 20px 70px 30px 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,6 +70,7 @@ img{
 /* Categorias */
 .categorias__grid{
     display: grid;
+    margin-top: 15px;
     width: 100vw;
     height: 60vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -153,14 +138,11 @@ img{
 }
 /* Productos */
 .listado__productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 10px;
     border: solid 1px rgb(161, 160, 160);
     border-radius: 3%;
     width: 300px;
-    background-image: linear-gradient(to bottom, green, rgb(4, 206, 4));
+    background-image: linear-gradient(to bottom, rgb(1, 179, 1), rgb(3, 218, 3));
     color: white;
 }
 .descripcion__productos{
@@ -178,9 +160,8 @@ img{
     color: white;
 }
 .listado__boton{
-    width: 150px;
-    height: 30px;
     border: rgb(1, 146, 1) solid 1px;
+    background-color: rgb(1, 146, 1);
     border-radius: 10px;
 }
 .listado__boton:hover{
@@ -229,6 +210,9 @@ a{
 /* Fin footer */
 /* media querie de trablet*/
 @media (min-width: 576px) and (max-width: 992px){
+    .articles__productos{
+        margin: auto;
+    }
     .categorias__grid{
         height: auto;
         grid-template-columns: 1fr 1fr 1fr;
@@ -288,6 +272,9 @@ a{
 /* fin media querie de tablet */
 /* media querie de celular */
 @media (min-width: 320px) and (max-width: 575px){
+    .articles__productos{
+        margin: auto;
+    }
     .footer__mapa{
     width: 100%;
     height: 100%;

@@ -22,21 +22,41 @@
             <!-- logo -->
             <a href="../index.html"><img class="header__lista--logo" alt="VerdeListo" src="../recursos/logovd.png"></a>
             <!-- fin logo -->
-            <ul class="header__nav--ul">
-                <!-- menu desplegable -->
-                <li class="header__li">Categorias
-                    <ul class="li__cat--ul">
-                        <li class="li__cat"><a href="ofertas.html">Ofertas</a></li>
-                        <li class="li__cat"><a href="delacasa.html">De la casa</a></li>
-                        <li class="li__cat"><a href="verduleria.html">Verduleria</a></li>
-                        <li class="li__cat"><a href="granja.html">Granja</a></li>
-                        <li class="li__cat"><a href="bebidas.html">Bebidas</a></li>
-                        <li class="li__cat"><a href="congelados.html">Congelados</a></li>
-                    </ul>
-                </li>
-                <!-- fin menu desplegable -->
-                <li class="header__li--pedidos"> <a href="pedidos.html"><img class="li__ico" alt="pedidos" src="../recursos/pedido.svg"></img></a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg header">
+                <div class="container-fluid d-flex flex-row-reverse">
+                        <div class="p-2 flex-fill pedidos__div">
+                            <a class="navbar-brand" href="pedidos.html">
+                                <img class="li__ico" src="../recursos/pedido.svg" alt="pedidos">
+                            </a>
+                        </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                        <div>
+                            <form class="d-flex " role="search">
+                                <input class="form-control me-2 buscar" type="search" placeholder="Buscar..." aria-label="Search">
+                                <button class="btn btn-outline-success boton__buscar" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-5 fw-semibold categoria__font" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="ofertas.html">Ofertas</a></li>
+                                    <li><a class="dropdown-item" href="delacasa.html">De la Casa</a></li>
+                                    <li><a class="dropdown-item" href="verduleria.html">Verdulería</a></li>
+                                    <li><a class="dropdown-item" href="granja.html">Granja</a></li>
+                                    <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                                    <li><a class="dropdown-item" href="congelados.html">Congelados</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </nav>
     </header>
     <!-- cierre de logo + nav -->
