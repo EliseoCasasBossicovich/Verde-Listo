@@ -290,6 +290,7 @@ a{
         height: 30px;
         font-size: 15px;
     }
+
     .pedido__vacio{
         margin: auto;
         border-radius: 0;
@@ -307,6 +308,12 @@ a{
     }
     .pedido__pregunta--dos{
         font-size: 15px;
+    }
+    .pedido__titulo{
+        display: none !important;
+    }
+    .pedido__recomendado{
+    display: none !important;
     }
     .footer__contactanos{
         display: grid;
@@ -396,6 +403,12 @@ a{
     .pedido__pregunta--dos{
         font-size: 15px;
     }
+    .pedido__titulo{
+        display: none !important;
+    }
+    .pedido__recomendado{
+        display: none !important;
+        }
     .footer__contactanos{
         display: grid;
         grid-template-areas: "indice"
