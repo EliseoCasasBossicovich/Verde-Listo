@@ -1,0 +1,26 @@
+{
+  "name": "29295",
+  "version": "1.0.0",
+  "description": "<h1>VerdeListo- Proyecto CoderHouse</h1>\r <p>Este sitio es para un almacén para el curso de desarrollo web</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliseoCasasBossicovich/Verde-Listo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliseoCasasBossicovich/Verde-Listo/issues"
+  },
+  "homepage": "https://github.com/EliseoCasasBossicovich/Verde-Listo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,371 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/* header */
+/* Lista categorias */
+ul {
+  list-style: none; }
+
+.header__nav {
+  background-image: url(../recursos/portada.jpg);
+  background-position: top;
+  background-size: contain; }
+
+.header {
+  background-color: white;
+  height: 65px; }
+
+.header__lista--logo {
+  width: 300px;
+  display: flex;
+  flex-direction: column; }
+
+.pedidos__div {
+  display: flex;
+  justify-content: end; }
+
+.buscar {
+  width: 50vw; }
+
+.categoria__font {
+  color: black; }
+
+.boton__buscar {
+  border: #019201 solid 1px;
+  background-color: #40b908;
+  color: white;
+  font-weight: 600; }
+
+.li__ico {
+  width: 43px;
+  height: 45px; }
+
+/* body */
+body {
+  background-color: #ebe9e9; }
+
+img {
+  padding: 10px;
+  width: 100%;
+  height: 100%; }
+
+.principal__titulo {
+  margin: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap; }
+
+.articles__productos {
+  margin: 20px 70px 30px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* Categorias */
+.categorias__grid {
+  display: grid;
+  margin-top: 15px;
+  width: 99vw;
+  height: 60vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 15px; }
+
+.sandia {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  background-image: url("../recursos/sandia.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+.rabanitos {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  background-image: url("../recursos/rabanitos.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+.naranjas {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  display: flex;
+  background-image: url("../recursos/naranjas.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+.palta {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  background-image: url("../recursos/palta.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+.tomate {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  background-image: url("../recursos/tomater.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+.ajo {
+  grid-column: 3/5;
+  grid-row: 3/4;
+  display: flex;
+  background-image: url("../recursos/ajo.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+
+/* Productos */
+.listado__productos {
+  margin: 10px;
+  border: solid 1px #a1a0a0;
+  border-radius: 3%;
+  width: 300px;
+  background-image: linear-gradient(to bottom, #01b301, #03da03);
+  color: white; }
+
+.descripcion__productos {
+  width: 100%;
+  padding: 3px;
+  text-align: center; }
+
+.categorias__boton {
+  width: 130px;
+  height: 50px;
+  background-color: rgba(42, 165, 4, 0.719);
+  border: rgba(42, 165, 4, 0.719) 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  color: white; }
+
+.listado__boton {
+  border: #019201 solid 1px;
+  background-color: #019201;
+  border-radius: 10px; }
+
+.listado__boton:hover {
+  transform: scale(1.05, 1.05);
+  border: #019201 solid 1px;
+  background-color: #019201; }
+
+/* Fin Productos */
+/* Pedidos */
+.pedido__vacio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  background-color: #d6d5d5;
+  border-radius: 15px; }
+
+.pedido__cant {
+  padding: 2px 0 2px 16px;
+  font-size: 20px;
+  border-bottom: 1px solid #a8a7a7; }
+
+.pedido__texto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+  font-size: 40px;
+  text-align: center; }
+
+.pedido__pregunta {
+  font-size: 25px;
+  color: #444343; }
+
+.pedido__pregunta--dos {
+  font-size: 20px;
+  color: #444343; }
+
+/* Fin pedidos */
+/* footer */
+footer {
+  padding: 27px;
+  background-color: #40b908;
+  color: white; }
+
+.footer__contactanos {
+  display: grid;
+  grid-template-areas: "indice mapa redes" "indice mapa derechos"; }
+
+.footer__nav {
+  grid-area: indice;
+  /* border-right: black solid 1px; */ }
+
+.footer__visitanos {
+  grid-area: mapa; }
+
+.footer__redes {
+  grid-area: redes; }
+
+.footer__icono {
+  width: 65px;
+  height: 65px; }
+
+.footer__derechos {
+  grid-area: derechos; }
+
+.footer__nav ul li {
+  padding-bottom: 12px; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+/* Fin footer */
+/* media querie de trablet*/
+@media (min-width: 576px) and (max-width: 992px) {
+  .header {
+    height: auto; }
+  .articles__productos {
+    margin: auto; }
+  .categorias__grid {
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px; }
+  .sandia {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .rabanitos {
+    height: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .naranjas {
+    grid-column: 3/4;
+    grid-row: 1/3; }
+  .palta {
+    height: 100px;
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .tomate {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .ajo {
+    height: 100px;
+    grid-column: 2/4;
+    grid-row: 3/4; }
+  .categorias__boton {
+    width: 120px;
+    height: 30px;
+    font-size: 15px; }
+  .pedido__vacio {
+    margin: auto;
+    border-radius: 0; }
+  .pedido__cant {
+    padding: 2px 0 2px 16px;
+    font-size: 18px; }
+  .pedido__texto {
+    height: 45vh;
+    font-size: 30px; }
+  .pedido__pregunta {
+    font-size: 20px; }
+  .pedido__pregunta--dos {
+    font-size: 15px; }
+  .pedido__titulo {
+    display: none !important; }
+  .pedido__recomendado {
+    display: none !important; }
+  .footer__contactanos {
+    display: grid;
+    grid-template-areas: "indice mapa" "indice mapa" "redes redes" "derechos derechos"; }
+  .footer__conect {
+    display: flex; }
+  .footer__derechos {
+    margin-top: 20px; } }
+
+/* fin media querie de tablet */
+/* media querie de celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  .header {
+    height: auto; }
+  .principal__titulo {
+    font-size: 22px; }
+  .articles__productos {
+    margin: auto; }
+  .categorias__grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    column-gap: 15px; }
+  .sandia {
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .rabanitos {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .naranjas {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .palta {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .tomate {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .ajo {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  .categorias__boton {
+    width: 110px;
+    height: 30px;
+    font-size: 15px; }
+  .pedido__vacio {
+    margin: auto;
+    border-radius: 0; }
+  .pedido__cant {
+    padding: 2px 0 2px 16px;
+    font-size: 18px; }
+  .pedido__texto {
+    height: 45vh;
+    font-size: 25px; }
+  .pedido__pregunta {
+    font-size: 15px; }
+  .pedido__pregunta--dos {
+    font-size: 15px; }
+  .pedido__titulo {
+    display: none !important; }
+  .pedido__recomendado {
+    display: none !important; }
+  .footer__contactanos {
+    display: grid;
+    grid-template-areas: "indice" "mapa" "redes" "derechos"; }
+  .footer__mapa {
+    width: 100%;
+    height: 100%; } }
+
+/* fin media querie de celular */
+/* Fin media */
