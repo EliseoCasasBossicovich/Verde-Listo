@@ -1,0 +1,24 @@
+.productos{
+    margin: 20px 70px 30px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__listado{
+        margin: 10px;
+        border: solid 1px rgb(161, 160, 160);
+        border-radius: 3%;
+        width: 300px;
+        background-image: linear-gradient(to bottom, rgb(45, 123, 6), $color-principal);
+        color: white;
+    }
+    &__boton{
+        border: $color-productos-boton solid 1px;
+        background-color: $color-productos-boton;
+        border-radius: 10px;
+        &:hover{
+            transform: scale(1.05, 1.05);
+            border: $color-productos-boton solid 1px;
+            background-color: $color-productos-boton;
+        }
+    }
+}

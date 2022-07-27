@@ -1,0 +1,33 @@
+/* footer */
+footer{
+    padding: 27px;
+    background-color: $color-principal;
+    color: white;
+    .footer{
+        &__contactanos{
+            display: grid;
+            grid-template-areas: "indice mapa redes"
+                                "indice mapa derechos";
+        }
+        &__nav{
+            grid-area: indice;
+        }
+        &__nav ul li{
+            padding-bottom: 12px;
+        }
+        &__visitanos{
+            grid-area: mapa;
+        }
+        &__redes{
+            grid-area: redes;
+        }
+        &__icono{
+            width: 65px;
+            height: 65px;
+        }
+        &__derechos{
+            grid-area: derechos;
+        }
+    }
+}
+/* Fin footer */

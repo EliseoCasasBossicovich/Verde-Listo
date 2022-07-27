@@ -18,15 +18,15 @@
 <body>
     <!-- logo + nav --> 
     <header>
-        <nav class="header__nav">
+        <nav class="header">
             <!-- logo -->
             <a href="../index.html"><img class="header__lista--logo" alt="VerdeListo" src="../recursos/logovd.png"></a>
             <!-- fin logo -->
-            <nav class="navbar navbar-expand-lg header">
+            <nav class="navbar navbar-expand-lg header__nav">
                 <div class="container-fluid d-flex flex-row-reverse">
-                        <div class="p-2 flex-fill pedidos__div">
+                        <div class="p-2 flex-fill header__pedidos">
                             <a class="navbar-brand" href="pedidos.html"> Pedido
-                                <img class="li__ico" src="../recursos/pedido.svg" alt="pedidos">
+                                <img class="header__pedidos--ico" src="../recursos/pedido.svg" alt="pedidos">
                             </a>
                         </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,8 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                         <div>
                             <form class="d-flex " role="search">
-                                <input class="form-control me-2 buscar" type="search" placeholder="Buscar..." aria-label="Search">
-                                <button class="btn btn-outline-success boton__buscar" type="submit">Buscar</button>
+                                <input class="form-control me-2 header__buscar" type="search" placeholder="Buscar..." aria-label="Search">
+                                <button class="btn btn-outline-success header__buscar--boton" type="submit">Buscar</button>
                             </form>
                         </div>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2">
@@ -63,170 +63,170 @@
     <!-- información de mi sitio -->
     <main>
         <!-- Productos de bebidas -->
-        <section class="productos">
+        <section>
             <article>
                 <h2 class="principal__titulo">Productos Bebidas</h2>
             </article>
         </section>
-        <section class="articles__productos">
-            <article class="card listado__productos" style="width: 18rem;">
+        <section class="productos">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/ajo.jpg" class="card-img-top" alt="ajo">
                 <div class="card-body">
                     <h5 class="card-title">Ajo</h5>
                     <p class="card-text">Cabezas de ajo grandes.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/sandia.jpg" class="card-img-top" alt="Sandia">
                 <div class="card-body">
                     <h5 class="card-title">Sandia</h5>
                     <p class="card-text">Sandias dulces brasileras.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/cebolla.jpg" class="card-img-top" alt="Cebollas">
                 <div class="card-body">
                     <h5 class="card-title">Cebollas</h5>
                     <p class="card-text">Cebollas Doradas.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/cereza.jpg" class="card-img-top" alt="Cerezas Carletti">
                 <div class="card-body">
                     <h5 class="card-title">Cerezas Carletti</h5>
                     <p class="card-text">Cerezas dulces Carletti.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/palta.jpg" class="card-img-top" alt="Paltas">
                 <div class="card-body">
                     <h5 class="card-title">Paltas</h5>
                     <p class="card-text">Paltas Brasileras.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/anana.jpg" class="card-img-top" alt="Anana">
                 <div class="card-body">
                     <h5 class="card-title">Ananás</h5>
                     <p class="card-text">Ananás dulces.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/naranjas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/tomater.jpg" class="card-img-top" alt="tomates">
                 <div class="card-body">
                     <h5 class="card-title">Tomates redondos</h5>
                     <p class="card-text">Tomates redondos a punto.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/sandia.jpg" class="card-img-top" alt="sandias">
                 <div class="card-body">
                     <h5 class="card-title">Sandias</h5>
                     <p class="card-text">Sandias dulces brasileras.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/bananas.jpg" class="card-img-top" alt="bananas">
                 <div class="card-body">
                     <h5 class="card-title">Bananas</h5>
                     <p class="card-text">Bananas Ecuatorianas.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/ajo.jpg" class="card-img-top" alt="ajo">
                 <div class="card-body">
                     <h5 class="card-title">Ajos</h5>
                     <p class="card-text">Cabezas de ajo grandes.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/anana.jpg" class="card-img-top" alt="ananas">
                 <div class="card-body">
                     <h5 class="card-title">Ananás</h5>
                     <p class="card-text">Ananás dulces.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/cebolla.jpg" class="card-img-top" alt="cebollas">
                 <div class="card-body">
                     <h5 class="card-title">Cebollas</h5>
                     <p class="card-text">Cebollas Doradas.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/cereza.jpg" class="card-img-top" alt="cerezas carletti">
                 <div class="card-body">
                     <h5 class="card-title">Cerezas Carletti</h5>
                     <p class="card-text">Cerezas dulces Carletti</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/sandia.jpg" class="card-img-top" alt="sandias">
                 <div class="card-body">
                     <h5 class="card-title">Sandias</h5>
                     <p class="card-text">Sandias dulces brasileras.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/tomater.jpg" class="card-img-top" alt="tomate">
                 <div class="card-body">
                     <h5 class="card-title">Tomates Redondos</h5>
                     <p class="card-text">Tomates redondos a punto.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/palta.jpg" class="card-img-top" alt="paltas brasileras">
                 <div class="card-body">
                     <h5 class="card-title">Paltas</h5>
                     <p class="card-text">Paltas Brasileras.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/bananas.jpg" class="card-img-top" alt="bananas">
                 <div class="card-body">
                     <h5 class="card-title">Bananas</h5>
                     <p class="card-text">Bananas Ecuatorianas.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/ajo.jpg" class="card-img-top" alt="ajo">
                 <div class="card-body">
                     <h5 class="card-title">Ajos</h5>
                     <p class="card-text">Cabezas de ajo grandes.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
-            <article class="card listado__productos" style="width: 18rem;">
+            <article class="card productos__listado" style="width: 18rem;">
                 <img src="../recursos/cereza.jpg" class="card-img-top" alt="cerezas carletti">
                 <div class="card-body">
                     <h5 class="card-title">Cerezas Carletti</h5>
                     <p class="card-text">Cerezas dulces Carletti.</p>
-                    <a href="#" class="btn btn-primary listado__boton">Agregar al pedido</a>
+                    <a href="#" class="btn btn-primary productos__boton">Agregar al pedido</a>
                 </div>
             </article>
         </section>

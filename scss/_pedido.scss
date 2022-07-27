@@ -1,0 +1,33 @@
+.pedido{
+    &__vacio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+        background-color: rgb(214, 213, 213);
+        border-radius: 15px;
+    }
+    &__cant{
+        padding: 2px 0 2px 16px;
+        font-size: 20px;
+        border-bottom: 1px solid rgb(168, 167, 167);
+    }
+    &__texto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        height: 45vh;
+        font-size: 40px;
+        text-align: center;
+    }
+    &__pregunta{
+        font-size: 25px;
+        color: rgb(68, 67, 67);
+    }
+    &__pregunta--dos{
+        font-size: 20px;
+        color: rgb(68, 67, 67);
+    }
+}
