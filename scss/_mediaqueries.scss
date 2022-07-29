@@ -1,9 +1,8 @@
-/* media querie de trablet*/
 @media (min-width: 576px) and (max-width: 992px){
-    .header{
+    .header__nav{
         height: auto;
     }
-    .articles__productos{
+    .productos{
         margin: auto;
     }
     .categorias__grid{
@@ -48,7 +47,6 @@
         height: 30px;
         font-size: 15px;
     }
-
     .pedido__vacio{
         margin: auto;
         border-radius: 0;
@@ -73,30 +71,28 @@
     .pedido__recomendado{
     display: none !important;
     }
-    .footer__contactanos{
-        display: grid;
-        grid-template-areas: "indice mapa"
-                            "indice mapa"
-                            "redes redes"
-                            "derechos derechos";
-    }
-    .footer__conect{
-        display: flex;
-    }
-    .footer__derechos{
-        margin-top: 20px;
+    .footer{
+        &__contactanos{
+            display: grid;
+            grid-template-areas: "indice mapa"
+                                "indice mapa"
+                                "redes redes"
+                                "derechos derechos";
+        }
+        &__derechos{
+            margin-top: 20px;
+        }
     }
 }
-/* fin media querie de tablet */
-/* media querie de celular */
+
 @media (min-width: 320px) and (max-width: 575px){
-    .header{
+    .header__nav{
         height: auto;
     }
     .principal__titulo{
         font-size: 22px;
     }
-    .articles__productos{
+    .productos{
         margin: auto;
     }
     .categorias__grid{
@@ -143,41 +139,44 @@
         height: 30px;
         font-size: 15px;
     }
-    .pedido__vacio{
-        margin: auto;
-        border-radius: 0;
-    }
-    .pedido__cant{
-        padding: 2px 0 2px 16px;
-        font-size: 18px;
-    }
-    .pedido__texto{
-        height: 45vh;
-        font-size: 25px;
-    }
-    .pedido__pregunta{
-        font-size: 15px;
-    }
-    .pedido__pregunta--dos{
-        font-size: 15px;
-    }
-    .pedido__titulo{
-        display: none !important;
-    }
-    .pedido__recomendado{
-        display: none !important;
+    .pedido{
+        &__vacio{
+            margin: auto;
+            border-radius: 0;
         }
-    .footer__contactanos{
-        display: grid;
-        grid-template-areas: "indice"
-                            "mapa"
-                            "redes"
-                            "derechos";
+        &__cant{
+            padding: 2px 0 2px 16px;
+            font-size: 18px;
+        }
+        &__texto{
+            height: 45vh;
+            font-size: 25px;
+        }
+        &__pregunta{
+            font-size: 15px;
+        }
+        &__pregunta--dos{
+            font-size: 15px;
+        }
+        &__titulo{
+            display: none !important;
+        }
+        &__recomendado{
+            display: none !important;
+        }
     }
-    .footer__mapa{
-    width: 100%;
-    height: 100%;
+    .footer{
+        &__contactanos{
+            display: grid;
+            grid-template-areas: "indice"
+                                "mapa"
+                                "redes"
+                                "derechos";
+        }
+        &__mapa{
+        width: 100%;
+        height: 100%;
+        }    
     }
+
 }
-/* fin media querie de celular */
-/* Fin media */

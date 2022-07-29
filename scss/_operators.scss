@@ -1,0 +1,6 @@
+// mixin
+@mixin flex ($background-size, $justify, $align){
+    background-size: $background-size;
+    justify-content: $justify;
+    align-items: $align;
+}
