@@ -5,15 +5,14 @@
             display: grid;
             grid-template-areas: "indice mapa redes"
                                 "indice mapa derechos";
-            padding: 27px;
-            background-color: $color-principal;
+            padding: 1.688rem;
             color: white;
         }
         &__nav{
             grid-area: indice;
         }
         &__nav ul li{
-            padding-bottom: 12px;
+            padding-bottom: 0.75rem;
         }
         &__visitanos{
             grid-area: mapa;
@@ -22,8 +21,8 @@
             grid-area: redes;
         }
         &__icono{
-            width: 65px;
-            height: 65px;
+            width: 4.063rem;
+            height: 4.063rem;
         }
         &__derechos{
             grid-area: derechos;

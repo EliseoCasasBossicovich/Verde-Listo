@@ -1,6 +1,27 @@
+// extend
+.pedido-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
 // mixin
-@mixin flex ($background-size, $justify, $align){
-    background-size: $background-size;
-    justify-content: $justify;
-    align-items: $align;
+@mixin grid ($url, $size, $content, $items) {
+    background-image: url("$url");
+    background-size: $size;
+    justify-content: $content;
+    align-items: $items;
+}
+// map
+$backcolor:(
+    pedido: rgb(214, 213, 213),
+    footer:  $color-principal,
+    header: white,
+    buscarboton: $color-principal,
+);
+// each
+@each $name, $color in $backcolor {
+    .color-#{$name} {
+        background-color: #{$color};
+    }
 }

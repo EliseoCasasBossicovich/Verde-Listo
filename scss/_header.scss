@@ -3,7 +3,6 @@
     background-position: top;
     background-size: contain;
     &__nav{
-        background-color: white;
         height: 65px;
     }
     &__lista--logo{
@@ -24,7 +23,6 @@
     }
     &__buscar--boton{
         border: $color-principal solid 1px;
-        background-color: $color-principal;
         color: white;
         font-weight: 600;
     }

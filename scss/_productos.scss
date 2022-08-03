@@ -1,8 +1,16 @@
+
 .productos{
     margin: 20px 70px 30px 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &__titulo{
+        margin: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__listado{
         margin: 10px;
         border: solid 1px rgb(161, 160, 160);
